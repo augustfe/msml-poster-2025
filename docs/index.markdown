@@ -20,3 +20,13 @@ $$
     e^{i \pi} + 1 &= 0
 \end{align*}
 $$
+
+It works, locally atleast.
+
+By pseudo-Hamiltonian PDEs, we refer to the class of partial differential equations that can be written on the form
+
+$$
+    u_t = S \frac{\delta\mathcal{H}}{\delta u}[u] - R \frac{\delta\mathcal{V}}{\delta u}[u] + f.
+$$
+
+Does inline math like $a^2 + b^2 = c^2$ work?
