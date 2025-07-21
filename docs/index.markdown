@@ -36,7 +36,7 @@ If you are interested in getting notified when our paper is available, please fi
     src="https://nettskjema.no/a/535090?embed=1"
     title="Get notified when our paper is available"
     frameborder="0"
-    width="75%"
+    width="100%"
 ></iframe>
 </details>
 
