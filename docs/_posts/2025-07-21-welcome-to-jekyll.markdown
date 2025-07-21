@@ -10,7 +10,7 @@ The math probably wont display right now, but that's okay!
 $$
     u_t = S \frac{\delta\mathcal{H}}{\delta u}[u] - R \frac{\delta\mathcal{V}}{\delta u}[u] + f
 $$
-If only things would load...
+If only things would load... Trying again.
 
 Jekyll requires blog post files to be named according to the following format:
 
