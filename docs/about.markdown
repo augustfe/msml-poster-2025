@@ -4,15 +4,28 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## About This Research
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+This poster presents an extension to **Pseudo-Hamiltonian Neural Networks (PHNNs)** for learning and solving partial differential equations (PDEs) in two spatial dimensions and one temporal dimension.
+The method builds on the original PHNN framework, which integrates machine learning with mathematical descriptions of physical systems to ensure conservation laws are respected.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+The methods implemented here will be made available in the [phlearn GitHub repository](https://github.com/SINTEF/pseudo-hamiltonian-neural-networks).
 
+### Authors
 
-[jekyll-organization]: https://github.com/jekyll
+**August Femtehjell**
+University of Oslo, SINTEF Digital \\
+Email: [august.femtehjell@sintef.no](mailto:august.femtehjell@sintef.no) \\
+GitHub: [@augustfe](https://github.com/augustfe)
+
+**Sølve Eidnes**
+SINTEF Digital \\
+Email: [solve.eidnes@sintef.no](mailto:solve.eidnes@sintef.no)
+
+### Conference
+
+This work is presented at the **Mathematical and Scientific Machine Learning (MSML) 2025** conference.
+
+---
+
+_If you have further questions, feel free to contact us._

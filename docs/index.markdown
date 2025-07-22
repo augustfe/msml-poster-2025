@@ -10,7 +10,7 @@ date: 2025-07-21 10:01:37 +0200
 categories: jekyll update
 ---
 
-# Pseudo-Hamiltonian Neural Networks 2: Electric Boogaloo
+# Pseudo-Hamiltonian Neural Networks for Learning (2+1)-Dimensional Partial Differential Equations
 
 ## Abstract
 
@@ -62,3 +62,7 @@ $$
 $$
 
 Does inline math like $a^2 + b^2 = c^2$ work?
+
+### Zakharov-Kuznetsov equation
+
+![Image title](imgs/zk_surface_animation_resized.gif)
