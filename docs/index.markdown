@@ -18,33 +18,9 @@ Pseudo-Hamiltonian neural networks (PHNN) were recently introduced for learning 
 Here, we extend the method to PDEs with 2 dimensions in space and one in time.
 The resulting model is comprised of up to three neural networks, modelling conservative, dissipative and external forces, which can be inspected separately to gain insight into the system.
 
-## Details
-
-For additional details about the method, we refer the reader to the original paper [Pseudo-Hamiltonian neural networks for learning partial differential equations](https://doi.org/10.1016/j.jcp.2023.112738).
-If you are interested in getting notified when our paper is available, please fill out the form below.
-
-<script
-    type="text/javascript"
-    src="https://nettskjema.no/static/js/external-embedding.js"
-></script>
-<details>
-    <summary style="cursor: pointer; font-weight: bold;">
-        Show form to get notified when our paper is available
-    </summary>
-<iframe
-    class="nettskjema-iframe"
-    src="https://nettskjema.no/a/535090?embed=1"
-    title="Get notified when our paper is available"
-    frameborder="0"
-    width="100%"
-></iframe>
-</details>
-
-If the form is not loading, refer to the link here: [Link to the form](https://nettskjema.no/a/535090).
-
 ## Additional figures
 
-Now we only need to get math working.
+<!-- Now we only need to get math working.
 
 $$
 \begin{align*}
@@ -61,8 +37,52 @@ $$
     u_t = S \frac{\delta\mathcal{H}}{\delta u}[u] - R \frac{\delta\mathcal{V}}{\delta u}[u] + f.
 $$
 
-Does inline math like $a^2 + b^2 = c^2$ work?
+Does inline math like $a^2 + b^2 = c^2$ work? -->
 
-### Zakharov-Kuznetsov equation
+### Zakharov--Kuznetsov equation
 
-![Image title](imgs/zk_surface_animation_resized.gif)
+The Zakharov--Kuznetsov equation is a generalization of the Korteweg-de Vries equation to two spatial dimensions, and is given by
+
+$$
+    u_t + \eta \, u_x u + \gamma^2 ( u_{xxx} + u_{xyy} ) = 0.
+$$
+
+We consider here the case where $\eta = 6$ and $\gamma = 1$.
+As the equation is Hamiltonian, we here inform the network that there are no dissipative or external forces, and the network learns the Hamiltonian and the skew-symmetric operator.
+
+![Zakharov-Kuznetsov equation](imgs/zk_surface_animation_transparent.gif)
+
+### Cahn--Hilliard equation
+
+The Cahn--Hilliard equation models the phase separation of a binary fluid, and is given by
+
+$$
+    u_t = \Delta \! \left( \nu u + \alpha u^3 + \mu \Delta u \right),
+$$
+
+where $\Delta$ is the Laplacian operator.
+Here, we consider the case where $\nu = -1.0$, $\alpha = 1.0$ and $\mu = -0.001$.
+The model is informed that there are no conservative or external forces, and the network learns the dissipative integral and the positive semi-definite operator.
+
+![Cahn-Hilliard equation](imgs/cahn_hilliard_resized.gif)
+
+## Details
+
+For additional details about the method, we refer the reader to the original paper [Pseudo-Hamiltonian neural networks for learning partial differential equations](https://doi.org/10.1016/j.jcp.2023.112738).
+When completed, this work will be added to the [`phlearn` GitHub repository](https://github.com/SINTEF/pseudo-hamiltonian-neural-networks).
+If you are interested in getting notified when our paper is available, please fill out the form below.
+
+<details>
+  <summary>
+    Get notified when the paper is available
+  </summary>
+  <iframe
+    class="nettskjema-iframe"
+    src="https://nettskjema.no/a/535090?embed=1"
+    title="Get notified when our paper is available"
+    frameborder="0"
+    width="100%"
+  ></iframe>
+</details>
+
+<!-- If the form is not loading, refer to the link here: [Link to the form](https://nettskjema.no/a/535090). -->
