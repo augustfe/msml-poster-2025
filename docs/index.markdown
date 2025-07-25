@@ -89,7 +89,7 @@ In order to make sense of this, note that the $L^2$ errors for models 2 and 3 st
 
 We see that this corresponds to the mean values of the models diverging from zero.
 
-<div style="text-align: center; margin: 20px 0">
+<div style="text-align: center; margin: auto;">
   <img
     src="imgs/heat/relative_errors.png"
     alt="Relative errors"
@@ -102,7 +102,7 @@ We see that this corresponds to the mean values of the models diverging from zer
   />
 </div>
 
-<div style="text-align: center; margin: auto">
+<div style="text-align: center; margin: auto;">
   <img
     src="imgs/heat/l2_norms.png"
     alt="L2 norms"
