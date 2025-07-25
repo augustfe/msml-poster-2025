@@ -68,13 +68,13 @@ The model is informed that there are no conservative or external forces, and the
 
 ### Heat equation
 
-The heat equation is simply given by
+The heat equation needs no introduction, and is given by
 
 $$
     u_t = \alpha \Delta u,
 $$
 
-with $\alpha = 0.01$.
+where we set $\alpha = 0.01$ here.
 The model is informed that there are no conservative or external force, and that the $R$ operator is identity.
 The network therefore only learns the dissipative integral.
 
