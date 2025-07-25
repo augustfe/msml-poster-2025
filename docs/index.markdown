@@ -50,7 +50,7 @@ $$
 We consider here the case where $\eta = 6$ and $\gamma = 1$.
 As the equation is Hamiltonian, we here inform the network that there are no dissipative or external forces, and the network learns the Hamiltonian and the skew-symmetric operator.
 
-![Zakharov-Kuznetsov equation](imgs/zk_surface_animation_transparent.gif)
+![Gif of the Zakharov-Kuznetsov equation](imgs/zk_surface_animation_transparent.gif)
 
 ### Cahn--Hilliard equation
 
@@ -64,7 +64,56 @@ where $\Delta$ is the Laplacian operator.
 Here, we consider the case where $\nu = -1.0$, $\alpha = 1.0$ and $\mu = -0.001$.
 The model is informed that there are no conservative or external forces, and the network learns the dissipative integral and the positive semi-definite operator.
 
-![Cahn-Hilliard equation](imgs/cahn_hilliard_resized.gif)
+![Gif of the Cahn-Hilliard equation](imgs/cahn_hilliard_resized.gif)
+
+### Heat equation
+
+The heat equation is simply given by
+
+$$
+    u_t = \alpha \Delta u,
+$$
+
+with $\alpha = 0.01$.
+The model is informed that there are no conservative or external force, and that the $R$ operator is identity.
+The network therefore only learns the dissipative integral.
+
+![Gif of the Heat equation](imgs/heat_equation_resized.gif)
+
+Note that while the solution goes to zero, the order of magnitude of the difference decreases.
+
+For the heat equation, we trained six different models, each with their distinct training data.
+The models were then evaluated on an unseen initial condition, giving varying results.
+As the numerical solution approaches zero, we see that the relative error increases rapidly for some of the models.
+In order to make sense of this, note that the $L^2$ errors for models 2 and 3 start increasing linearly after approximately $t = 4$, while the $L^2$ norm of the solution is decreasing exponentially.
+
+We see that this corresponds to the mean values of the models diverging from zero.
+
+<div style="text-align: center; margin: 20px 0">
+  <img
+    src="imgs/heat/relative_errors.png"
+    alt="Relative errors"
+    style="width: 45%; max-width: 550px"
+  />
+  <img
+    src="imgs/heat/l2_errors.png"
+    alt="L2 errors"
+    style="width: 45%; max-width: 550px"
+  />
+</div>
+
+<div style="text-align: center; margin: auto">
+  <img
+    src="imgs/heat/l2_norms.png"
+    alt="L2 norms"
+    style="width: 45%; max-width: 550px"
+  />
+  <img
+    src="imgs/heat/mean_values.png"
+    alt="Mean values"
+    style="width: 45%; max-width: 550px"
+  />
+</div>
 
 ## Details
 
@@ -75,7 +124,7 @@ If you are interested in getting notified when our paper is available, please fi
 <details>
   <summary>
     Get notified when the paper is available
-  </summary>
+</summary>
   <iframe
     class="nettskjema-iframe"
     src="https://nettskjema.no/a/535090?embed=1"
